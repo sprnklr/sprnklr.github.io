@@ -1,4 +1,7 @@
-p {
+div {
     border: 1px solid red;
 }
 
+#nav {
+    background: gold;
+}
