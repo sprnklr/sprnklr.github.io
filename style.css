@@ -4,8 +4,171 @@
     font-family: sans-serif;
 }
 
-.container {
-    width:100%;
+html,body {
     height:100%;
-    background: #42455a;
+    min-height: 100%;
 }
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    color:white;
+    background-image: url(assets/4kTrees.jpg);
+    height:100vh;
+}
+
+.navbar ul {
+    display: inline-flex;
+    margin-left:10%;
+    margin-top:40px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.contact {
+    position:absolute;
+    right: 10%;
+    color:white;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.social-icons ul li{
+    margin-bottom: 15px;
+}
+
+.social-icons ul a{
+    color: rgb(31, 31, 31);
+    padding:5px;
+    border:1px solid white;
+    border-radius:50%;
+    background-color:white;
+}
+
+.banner {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.overview {
+    background-color: rgb(31, 31, 31);
+}
+
+.content {
+    color: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10vh;
+
+}
+
+.title{
+    display: inline-flex;
+    list-style: none;
+}
+
+.section {
+    list-style: outside;
+    font-size: small;
+    margin-top: 10px;
+    margin-left: 15px;
+    max-width: 250px;
+}
+
+.content h1{
+    margin-bottom: 80px;
+}
+
+.content p{
+    margin-bottom: 80px;
+}
+
+.details h3{
+    margin-bottom: 20px;
+}
+
+.details {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10vh;
+}
+
+.table {
+    margin-bottom: 100px;
+}
+
+.table th, td {
+    text-align:left;
+    padding:10px;
+    border-top: 1px solid #ddd;
+}
+
+.learn {
+    margin-left: 35px;
+}
+
+.lsection {
+    padding-bottom: 5px;
+}
+
+.details p{
+    margin-top: 40px;
+}
+
+.links {
+    max-width: 1100px;
+    margin:50px auto;
+    text-align: center;
+}
+
+.link-btn {
+    text-decoration: none;
+    margin: 160px;
+    padding:10px;
+    border:2px solid rgb(31, 31, 31);
+    border-radius:20px 20px 20px 20px;
+    background-color: rgb(31, 31, 31);
+    color:white;
+}
+
+.endpage {
+    height:300px;
+    background-color: rgb(31, 31, 31);
+}
+.social-ext {
+    color:white;
+    text-align: center;
+}
+
+.social-ext h3{
+    padding-top: 100px;
+}
+
+.social-ext ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.social-ext ul a{
+    color: rgb(31, 31, 31);
+    margin:0 3px;
+    padding:10px;
+    border:1px solid white;
+    border-radius:50%;
+    background-color:white;
+}
+
+.social-ext .fa{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
