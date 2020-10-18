@@ -1,7 +1,7 @@
 * {
     margin:0;
     padding:0;
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 html,body {
@@ -15,160 +15,132 @@ html,body {
 }
 
 .main {
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #f6D365,#FDA085);
     color:white;
-    background-image: url(assets/4kTrees.jpg);
-    height:100vh;
+    font-family: poppins;
 }
 
-.navbar ul {
-    display: inline-flex;
-    margin-left:10%;
-    margin-top:40px;
+header {
+    font-size: 1.5rem;
 }
 
-.navbar ul li {
+header, form{
+    min-height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+form button{
+    color: #FDA085;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #FDA085;
+    color:white
+}
+
+.todo-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width:30%;   
     list-style: none;
-    margin-left: 30px;
 }
 
-.contact {
-    position:absolute;
-    right: 10%;
-    color:white;
-    text-decoration: none;
-}
-
-.navbar {
-    background-color: transparent;
-}
-
-.social-icons ul li{
-    margin-bottom: 15px;
-}
-
-.social-icons ul a{
-    color: rgb(31, 31, 31);
-    padding:5px;
-    border:1px solid white;
-    border-radius:50%;
+.todo {
+    margin-bottom: 0.5rem;
     background-color:white;
-}
-
-.banner {
-    text-align: center;
-    margin-top: 10%;
-}
-
-.overview {
-    background-color: rgb(31, 31, 31);
-}
-
-.content {
-    color: white;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 10vh;
+    color:black;
+    font-size:1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
 
 }
 
-.title{
-    display: inline-flex;
-    list-style: none;
+.todo li{
+    flex:1;
 }
 
-.section {
-    list-style: outside;
-    font-size: small;
-    margin-top: 10px;
-    margin-left: 15px;
-    max-width: 250px;
-}
-
-.content h1{
-    margin-bottom: 80px;
-}
-
-.content p{
-    margin-bottom: 80px;
-}
-
-.details h3{
-    margin-bottom: 20px;
-}
-
-.details {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 10vh;
-}
-
-.table {
-    margin-bottom: 100px;
-}
-
-.table th, td {
-    text-align:left;
-    padding:10px;
-    border-top: 1px solid #ddd;
-}
-
-.learn {
-    margin-left: 35px;
-}
-
-.lsection {
-    padding-bottom: 5px;
-}
-
-.details p{
-    margin-top: 40px;
-}
-
-.links {
-    max-width: 1100px;
-    margin:50px auto;
-    text-align: center;
-}
-
-.link-btn {
-    text-decoration: none;
-    margin: 160px;
-    padding:10px;
-    border:2px solid rgb(31, 31, 31);
-    border-radius:20px 20px 20px 20px;
-    background-color: rgb(31, 31, 31);
+.trash-btn, .completed-btn {
+    background-color:#e67353;
     color:white;
+    border:none;
+    padding:1rem;
+    cursor:pointer;
+    font-size: 1rem;
 }
 
-.endpage {
-    height:300px;
-    background-color: rgb(31, 31, 31);
-}
-.social-ext {
-    color:white;
-    text-align: center;
+.completed-btn {
+    background-color: rgb(97, 184, 97);
 }
 
-.social-ext h3{
-    padding-top: 100px;
+.todo-item {
+    padding: 0rem 0.5rem;
 }
 
-.social-ext ul{
-    display: inline-flex;
-    list-style: none;
+.fa-trash, .fa-check {
+    pointer-events: none;
 }
 
-.social-ext ul a{
-    color: rgb(31, 31, 31);
-    margin:0 3px;
-    padding:10px;
-    border:1px solid white;
-    border-radius:50%;
-    background-color:white;
+.completed {
+    text-decoration: line-through;
+    opacity:0.5;
 }
 
-.social-ext .fa{
-    margin-top: 30px;
-    font-size: 20px;
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border:none;
+}
+
+.select {
+    margin:1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #ff6f47;
+    width:10rem;
+    cursor: pointer;
+    padding:1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #ff6f47;
+    top:0;
+    right:0;
+    padding:1rem;
+    pointer-events: none;
+    transition:all 0.3s ease;
+}
+
+.select:hover::after {
+    background-color: white;
+    color:#ff6f47;
+}
