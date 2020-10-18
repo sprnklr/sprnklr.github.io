@@ -16,7 +16,7 @@ html,body {
 
 .main {
     min-height: 100vh;
-    background-image: linear-gradient(120deg, #f6D365,#FDA085);
+    background-image: url(assets/cherry.jpg);
     color:white;
     font-family: poppins;
 }
